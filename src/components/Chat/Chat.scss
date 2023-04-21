@@ -1,0 +1,58 @@
+// Styles for chat.jsx
+.chat {
+  flex: 2;
+  background-color: #e8d3ff;
+
+  .chatInfo {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    background-color: #553b6f;
+    color: lightgray;
+    font-weight: bold;
+    .userDetail {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .back {
+        display: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      img {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid rgb(239, 230, 230);
+      }
+    }
+    .chatIcons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+    .chatIcons > * {
+      height: 18px;
+    }
+  }
+}
+@media (max-width: 475px) {
+  .chat {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    .chatInfo {
+      .userDetail {
+        .back {
+          display: block;
+        }
+      }
+    }
+  }
+}

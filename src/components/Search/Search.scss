@@ -1,0 +1,38 @@
+//Styles for Search.jsx
+.search {
+  border-bottom: 1px solid gray;
+  .form {
+    padding: 10px;
+    input {
+      background-color: transparent;
+      color: white;
+      outline: none;
+      border: none;
+      &::placeholder {
+        color: lightgray;
+      }
+    }
+  }
+  .userChat {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background-color: #240e3b;
+    }
+    img {
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .userInfo {
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}

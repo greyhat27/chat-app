@@ -1,0 +1,34 @@
+//Styles for Input.jsx
+.inputSec {
+  background-color: white;
+  height: 35px;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  input {
+    position: relative;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  .inputIcons {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    aside.EmojiPickerReact.epr-main {
+      position: absolute;
+      bottom: 50px;
+      right: 20px;
+    }
+  }
+  .inputIcons > * {
+    height: 20px;
+    color: rgb(138, 138, 138);
+    cursor: pointer;
+    &:hover {
+      color: #331751;
+    }
+  }
+}

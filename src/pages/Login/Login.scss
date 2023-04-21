@@ -1,0 +1,63 @@
+//Styles for Login.jsx
+.login {
+  background-color: #e8d3ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .formContainer {
+    background-color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: #6b49cb;
+    }
+    .title {
+      font-weight: normal;
+      font-size: 12px;
+      color: #6b49cb;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      input {
+        padding: 7px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #e8d3ff;
+        &::placeholder {
+          color: rgb(175, 175, 175);
+        }
+      }
+      button {
+        font-weight: bold;
+        color: white;
+        background-color: #6b49cb;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      span {
+        color: red;
+        margin: auto;
+      }
+    }
+    p {
+      color: #140b2c;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .formContainer {
+    padding: 10px 30px !important;
+  }
+}

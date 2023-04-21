@@ -1,0 +1,12 @@
+//Styles for Home.jsx
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .homeContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+}

@@ -1,0 +1,45 @@
+//styles for chats.jsx
+.chats{
+    .userChat{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        // color: white;
+        color: white;
+        cursor: pointer;
+        // border-bottom: 1px solid rgba(128, 128, 128, 0.367);
+        .userChat.selected {
+            background-color: #eaeaea; /* Update with your desired highlight color */
+          }
+        &:hover{
+            background-color: #240e3b7e;
+        }
+        img{
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            // -webkit-box-shadow: 1px 1px 54px 0px rgba(245,222,179,1);
+            // -moz-box-shadow: 1px 1px 54px 0px rgba(245,222,179,1);
+            // box-shadow: 1px 1px 54px 0px rgba(245,222,179,1);
+        }
+        .userInfo{
+            span{
+                font-weight: 500;
+            }
+            p{
+                margin: 0;
+                font-size: 9px;
+                color: lightgray;
+            }
+            .photoIcon{
+                height: 15px;
+                width: 15px;
+            }
+        }
+    }
+    .userChat.selected {
+        background-color: #240e3b; /* Update with your desired highlight color */
+      }
+}

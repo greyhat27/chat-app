@@ -1,0 +1,54 @@
+//Styles for Message.jsx
+.message {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  .msgInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    color: gray;
+    img {
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    span {
+      font-size: 8px;
+    }
+  }
+  .msgContent {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    p {
+      margin: 0;
+      background-color: #ede7f6;
+      padding: 10px;
+      font-size: 12px;
+      border-radius: 0 10px 10px 10px;
+      color: #333333;
+      max-width: max-content;
+    }
+    img {
+      width: 50%;
+      border-radius: 0 10px 10px 10px;
+      padding: 10px;
+      background-color: #ede7f6;
+    }
+  }
+  &.self {
+    flex-direction: row-reverse;
+    .msgContent {
+      align-items: flex-end;
+      p,
+      img {
+        background-color: #e8f5e9;
+        border-radius: 10px 0 10px 10px;
+      }
+    }
+  }
+}
