@@ -14,7 +14,6 @@ export const Home = () => {
 
   const handleBackClick = () => {
     setShowChatWindow(false);
-    console.log("back clicked");
   };
 
   return (
