@@ -2,7 +2,7 @@
 .chat {
   flex: 2;
   background-color: #e8d3ff;
-
+  overflow: hidden;
   .chatInfo {
     height: 35px;
     display: flex;
